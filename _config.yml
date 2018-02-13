@@ -11,7 +11,7 @@ email: lyenpon974@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "/www.lyenpon.fr" # the subpath of your site, e.g. /blog
-url: "https://laurent974.github.io/www.lyenpon.fr" # the base hostname & protocol for your site
+url: "https://laurent974.github.io" # the base hostname & protocol for your site
 github_username:  cow974
 
 # Build settings
