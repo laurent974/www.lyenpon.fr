@@ -1,0 +1,54 @@
+.Main {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/img/bg-index.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &-Frame {
+    &--top,
+    &--left,
+    &--right,
+    &--bottom {
+      position: fixed;
+      z-index: 9999;
+      background: #384C5C;
+    }
+
+    &--top {
+      width: 100%;
+      height: 30px;
+      left: 0;
+      top: 0;
+    }
+
+    &--bottom {
+      width: 100%;
+      height: 30px;
+      left: 0;
+      bottom: 0;
+      transform: translate3d(0,0,0);
+      backface-visibility: hidden;
+    }
+
+    &--right {
+      height: 110vh;
+      width: 30px;
+      right: 0;
+      top: 0;
+      transform: translate3d(0,0,0);
+      backface-visibility: hidden;
+    }
+
+    &--left {
+      height: 110vh;
+      width: 30px;
+      left: 0;
+      top: 0;
+    }
+  }
+}
