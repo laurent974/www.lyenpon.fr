@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main class="Main"><!-- .Main -->
+      <div class="Main-Frame"><!-- .Main-Frame -->
+        <div class="Main-Frame--top"></div>
+        <div class="Main-Frame--left"></div>
+        <div class="Main-Frame--right"></div>
+        <div class="Main-Frame--bottom"></div>
+      </div><!-- /.Main-Frame -->
+      <div class="Main-Content"><!-- .Main-Content -->
+        {{ content }}
+      </div><!-- /.Main-Content -->
+    </main><!-- /.Main -->
+    {% include footer.html %}
+  </body>
+</html>
