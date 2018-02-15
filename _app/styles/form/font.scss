@@ -1,0 +1,27 @@
+.Font {
+  // Width
+  &-Thin {
+    font-weight: 400;
+  }
+
+  &-Bold {
+    font-weight: 800;
+  }
+
+  // Coulours
+  &-Blue {
+    color: $blue;
+  }
+
+  &-DarkBlue {
+    color: $darkBlue;
+  }
+
+  &-Red {
+    color: $red;
+  }
+
+  &-White {
+    color: $white;
+  }
+}
