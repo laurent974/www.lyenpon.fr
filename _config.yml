@@ -25,5 +25,4 @@ exclude: ["_app",
           "node_modules",
           "package.json"]
 
-highlighter:    true
 keep_files: [assets]
