@@ -1,11 +1,15 @@
 // Global
 @import "_normalize";
+@import "_variables";
+
+//Form
+@import "form/font";
+
 //@import "_base";
 @import "_layout";
 @import "_syntax-highlighting";
 
-//Form
-@import "form/font";
+
 
 //Component
 @import "component/index";
