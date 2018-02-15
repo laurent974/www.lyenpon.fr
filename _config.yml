@@ -23,8 +23,7 @@ exclude: ["_app",
           "Gemfile.lock",
           "gulpfile.js",
           "node_modules",
-          "package.json",
-          "assets"]
+          "package.json"]
 
 highlighter:    true
 keep_files: [assets]
