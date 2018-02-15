@@ -1,5 +1,5 @@
 .Main {
-  font-family: "Rubik";
+  font-family: 'Rubik', sans-serif;
   display: block;
   position: fixed;
   width: 100%;
@@ -17,7 +17,7 @@
     &--bottom {
       position: fixed;
       z-index: 9999;
-      background: #384C5C;
+      background: $darkblue;
     }
 
     &--top {
