@@ -36,7 +36,7 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.write('.'))
     .pipe(cleanCss())
     .pipe(plumber.stop())
-    .pipe(gulp.dest('./_site/assets/'))
+    .pipe(gulp.dest('./assets/'))
     .pipe(filter('**/*.css'))
     .pipe(mmq())
     .pipe(notify({ message: 'Styles Task Complete', onLast: true}));
@@ -73,7 +73,7 @@ gulp.task('scripts', ['vendorJs', 'customJs'], function() {
     return merge(customJs, vendorJs)
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./_site/assets/'))
+        .pipe(gulp.dest('./assets/'))
         .pipe(notify({ message: 'Concat js files task Complete', onLast: true}));
 });
 
