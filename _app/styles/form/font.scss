@@ -3,11 +3,23 @@
 .Font {
   // Width
   &-Thin {
+    font-weight: 300;
+  }
+
+  &-Regular {
     font-weight: 400;
   }
 
+  &-Medium {
+    font-weight: 500;
+  }
+
   &-Bold {
-    font-weight: 800;
+    font-weight: 700;
+  }
+
+  &-Black {
+    font-weight: 900;
   }
 
   // Coulours
