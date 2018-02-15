@@ -62,7 +62,7 @@ gulp.task('customJs', function() {
     .pipe(notify({ message: 'Custom scripts task Complete', onLast: true}));
 });
 
-//Script tack: merge js files
+//Script task: merge js files
 gulp.task('scripts', ['vendorJs', 'customJs'], function() {
     // Get your js
     var customJs = gulp.src('./_app/temp/scripts.js')
@@ -81,9 +81,19 @@ gulp.task("complete-build", ["scripts"], function(){
   return del(['./_app/temp/**']);
 });
 
+
+//Image task: Optimize image
+gulp.task('images', function() {
+  return gulp.src(['./_app/images/**/*.{png,jpg,gif}'])
+    .pipe(newer('./assets/img/'))
+    .pipe(imagemin({ optimizationLevel: 7, progressive: true, interlaced: true}))
+    .pipe(gulp.dest('./assets/img/'))
+    .pipe(notify({ message: 'Images task Complete', onLast: true}));
+});
+
 //Watch task
-gulp.task('default', ['styles', 'vendorJs', 'customJs', 'complete-build'], function() {
-  //gulp.watch('./app/img/raw/**/*', ['images']);
+gulp.task('default', ['styles', 'vendorJs', 'customJs', 'complete-build', 'images'], function() {
+  gulp.watch('./_app/images/**/*', ['images']);
   gulp.watch('./_app/styles/**/*.scss', ['styles']);
   gulp.watch('./_app/scripts/**/*.js', ['customJs', 'complete-build']);
   gulp.watch('./_app/scripts/vendor/*.js', ['vendorJs', 'complete-build']);
