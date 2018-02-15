@@ -14,4 +14,14 @@
       font-size: 74px;
     }
   }
+
+  &-About {
+    position: absolute;
+    width: 790px;
+    height: 260px;
+    bottom: 70px;
+    left: 140px;
+    color: $white;
+    @extend .Font-Thin;
+  }
 }
