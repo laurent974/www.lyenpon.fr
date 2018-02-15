@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<section class="home">
-  <h1 class=""><a href=""><img src="assets/img/laurentyenpon.svg" alt="Laurent Yen-Pon Portfolio"></a></h1>
+<article class="Index"><!-- .Index -->
+  <a href="{{ site.baseurl }}" class="Index-Logo">
+    <img src="{{ site.baseurl }}/assets/img/laurentyenpon.svg" alt="Laurent Yen-Pon Portfolio">
+  </a>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -16,4 +18,4 @@ layout: default
     {% endfor %}
   </ul>
 
-</section>
+</article><!-- /.Index -->
