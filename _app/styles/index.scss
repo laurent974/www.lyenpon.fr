@@ -1,7 +1,9 @@
 .Index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &-Logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 50%;
   }
 }
