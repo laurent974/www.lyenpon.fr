@@ -1,5 +1,9 @@
-var test = "ok";
-var ok = "ok";
-var blabla = "bobo";
+var app = {
+  init: function() {
+    IndexAnimation.init();
+  }
+}
 
-console.log('ok');
+$(document).ready(function() {
+  app.init();
+});
