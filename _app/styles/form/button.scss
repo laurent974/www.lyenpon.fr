@@ -1,5 +1,11 @@
 .Button {
+  display: inline-block;
+  text-decoration: none;
+  padding: $spaceBig $spaceLarge;
+  @extend .Font-Medium;
+
   &--blue {
-    
+    background: $blue;
+    color: $white;
   }
 }

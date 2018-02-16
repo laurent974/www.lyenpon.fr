@@ -1,5 +1,6 @@
 .Link {
   &--white {
-    
+    color: $white;
+    @extend .Font-Medium;
   }
 }
