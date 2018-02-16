@@ -1,0 +1,59 @@
+.Hamburger {
+  margin: 0 20px 0 0;
+  z-index: 1;
+
+  padding: $spaceBig;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity,filter;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  overflow: visible;
+
+  &-Box {
+    width: 30px;
+    height: 0px;
+    display: inline-block;
+    position: relative;
+  }
+
+  &-Inner {
+    display: block;
+    top: 50%;
+    margin-top: -1px;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+
+    &,
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $darkBlue;
+      border-radius: 0;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0s;
+      transition-delay: .1s;
+      transition-timing-function: linear;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -8px;
+    }
+  }
+}
