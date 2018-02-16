@@ -11,7 +11,8 @@
     &Portfolio {
       margin: 0;
       text-align: right;
-      font-size: 74px;
+      font-size: 57px;
+      line-height: 38px;
     }
   }
 
@@ -21,8 +22,14 @@
     background-color: rgba(56, 76, 92, 0.55);
     width: 470px;
     bottom: 70px;
-    left: 140px;
+    left: 80px;
     color: $white;
     @extend .Font-Thin;
+  }
+
+  &Button {
+    position: absolute;
+    right: 80px;
+    bottom: 70px;
   }
 }
