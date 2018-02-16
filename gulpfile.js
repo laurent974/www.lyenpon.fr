@@ -54,7 +54,7 @@ gulp.task('vendorJs', function() {
 
 //Script task: Custom
 gulp.task('customJs', function() {
-  return gulp.src('./_app/temp/*.js')
+  return gulp.src('./_app/scripts/*.js')
     .pipe(plumber())
     .pipe(concat('scripts.js'))
     .pipe(uglify())
@@ -70,7 +70,7 @@ gulp.task('scripts', ['vendorJs', 'customJs'], function() {
     // Get vendor js
     var vendorJs = gulp.src('./_app/temp/vendors.js')
 
-    return merge(customJs, vendorJs)
+    return merge(vendorJs, customJs)
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/'))
