@@ -69,6 +69,22 @@
     z-index: 1;
     position: absolute;
     text-align: right;
-    right: 50px;
+    right: 80px;
+    top: 100px;
+
+    &-Elements {
+      li {
+        list-style-type: none;
+
+        a {
+          color: $white;
+          text-decoration: none;
+
+          &.active {
+            color: $blue;
+          }
+        }
+      }
+    }
   }
 }
