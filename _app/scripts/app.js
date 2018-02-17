@@ -1,6 +1,7 @@
 var app = {
   init: function() {
     IndexAnimation.init();
+    Nav.init();
   }
 }
 
