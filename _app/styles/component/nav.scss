@@ -94,6 +94,7 @@
       }
 
       &:hover {
+        transition-delay: .1s;
         transform: scale(1) rotate(-180deg);
         margin-top: 25px;
       }
