@@ -59,11 +59,12 @@
 
   &Nav {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 45px;
+    top: 25px;
     z-index: 100;
-    transition: all .6s cubic-bezier(.68,-.55,.27,1.55);
     opacity: 0;
+    margin: $spaceBig $spaceBig;
+    transition: all .6s cubic-bezier(.68,-.55,.27,1.55);
     transform: scale(0) rotate(360deg);
 
     .Hamburger-Inner {
@@ -73,6 +74,17 @@
       &:after,
       &:before {
         background-color: $white;
+      }
+
+      &:before {
+        top: 0;
+        opacity: 0;
+      }
+
+      &:after {
+        bottom: 0;
+        transform: rotate(90deg);
+        transition-property: bottom,transform;
       }
     }
   }
