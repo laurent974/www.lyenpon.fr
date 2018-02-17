@@ -56,4 +56,24 @@
       bottom: -8px;
     }
   }
+
+  &Nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    transition: all .6s cubic-bezier(.68,-.55,.27,1.55);
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+
+    .Hamburger-Inner {
+      background: $white;
+
+      &,
+      &:after,
+      &:before {
+        background-color: $white;
+      }
+    }
+  }
 }
