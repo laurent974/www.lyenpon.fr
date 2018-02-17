@@ -27,10 +27,16 @@
 
           <nav class="NavMenu"><!-- .NavMenu -->
             <ul class="NavMenu-Elements"><!-- .NavMenu-Elements -->
-              <li class="NavMenu-Item"><a class="active" href="http://www.funktional.net/">Accueil</a></li>
-              <li class="NavMenu-Item"><a href="/work/">Travaux</a></li>
-              <li class="NavMenu-Item"><a href="/about/">À Propos</a></li>
-              <li class="NavMenu-Item"><a href="http://www.funktional.net/contact/">Contact</a></li>
+              {% assign navigation_pages = site.pages | sort: 'weight' %}
+              {% for p in navigation_pages %}
+                {% if p.weight %}
+                  <li class="NavMenu-Item">
+                    <a href="{{ site.baseurl }}{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                      {{ p.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
             </ul><!-- /.NavMenu-Elements -->
           </nav><!-- /.NavMenu -->
 
