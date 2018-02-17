@@ -64,4 +64,11 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
+  .NavMenu {
+    z-index: 1;
+    position: absolute;
+    text-align: right;
+    right: 50px;
+  }
 }
