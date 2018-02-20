@@ -1,7 +1,20 @@
 var app = {
+  transitionsInit: function() {
+    Barba.Pjax.getTransition = function() {
+      return Transition;
+    };
+  },
+  viewsInit: function() {
+    HomeView.init();
+    ContactView.init();
+  },
   init: function() {
-    IndexAnimation.init();
     Nav.init();
+    this.viewsInit();
+
+    Barba.Pjax.start();
+    this.transitionsInit();
+    Barba.Prefetch.init();
   }
 }
 
