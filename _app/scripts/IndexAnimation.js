@@ -4,6 +4,11 @@ var IndexAnimation = {
     configFile: 'indexjs-config.json'
   },
 
+  destroy: function() {
+    window.pJSDom[0].pJS.fn.vendors.destroypJS();
+    window["pJSDom"] = [];
+  },
+
   init: function() {
     var that = this;
     particlesJS(that.settings.id,
