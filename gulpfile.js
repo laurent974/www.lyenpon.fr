@@ -54,7 +54,7 @@ gulp.task('vendorJs', function() {
 
 //Script task: Custom
 gulp.task('customJs', function() {
-  return gulp.src('./_app/scripts/*.js')
+  return gulp.src(['./_app/scripts/*.js', './_app/scripts/views/*.js'])
     .pipe(plumber())
     .pipe(concat('scripts.js'))
     .pipe(uglify())
