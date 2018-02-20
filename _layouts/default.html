@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body>
-    <main class="Main"><!-- .Main -->
+    <main class="Main" id="barba-wrapper"><!-- .Main -->
       <div class="Main-Frame"><!-- .Main-Frame -->
         <div class="Main-Frame--top"></div>
         <div class="Main-Frame--left"></div>
@@ -39,19 +39,8 @@
               {% endfor %}
             </ul><!-- /.NavMenu-Elements -->
           </nav><!-- /.NavMenu -->
-
-          <aside class="NavMenuSocials"><!-- .NavMenuSocials -->
-            <ul class="NavMenuSocials-Elements"><!-- .NavMenuSocials-Elements -->
-              <li class="NavMenuSocials-Item">
-                <a href="https://www.facebook.com/FunktionalAgency/" target="_blank"><i class="icon-facebook"></i></a>
-              </li>
-              <li class="NavMenuSocials-Item">
-                <a href="https://twitter.com/Funktional" target="_blank"><i class="icon-twitter"></i></a>
-              </li>
-            </ul><!-- /.NavMenuSocials-Elements -->
-          </aside><!-- /.NavMenuSocials -->
         </div>
-        {{ content }}
+          {{ content }}
       </section><!-- /.Main-Content -->
     </main><!-- /.Main -->
     {% include footer.html %}
