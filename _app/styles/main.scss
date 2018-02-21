@@ -7,6 +7,7 @@
 @import "form/font";
 @import "form/button";
 @import "form/link";
+@import "form/title";
 
 @import "_layout";
 @import "_syntax-highlighting";
@@ -18,3 +19,6 @@
 @import "component/hamburger";
 @import "component/nav";
 @import "component/breadcrumbs";
+@import "component/box.scss";
+@import "component/competence";
+@import "component/about";
