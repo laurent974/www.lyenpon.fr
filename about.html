@@ -1,0 +1,51 @@
+---
+layout: default
+title: À Propos
+weight: 3
+permalink: /about/
+barba_link: about
+---
+
+{% include page-header.html %}
+  <div class="About-Wrapper"><!-- .About-Wrapper -->
+    <section class="Box About"><!-- .About -->
+      <div class="Box-Title"><!-- .Box-Title -->
+        <h2 class="Title Title--inBloc Title--h2 Title--darkBlue">À Propos</h2>
+        <span class="About-TitleMore">Je me présente</span>
+      </div><!-- /.Box-Title -->
+
+      <p class="Paragraph Paragraph--drakBlue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid praesentium aperiam quidem quisquam, iste aliquam dignissimos quam est nostrum! Vitae quaerat et ea odio veniam consequuntur ipsa, reprehenderit aliquam excepturi!</p>
+    </section><!-- /.About -->
+
+    <section class="Box Competence"><!-- .Competence -->
+      <div class="Box-Title"><!-- .Box-Title -->
+        <h2 class="Title Title--inBloc Title--h2 Title--red">Mes Compétences</h2>
+        <span class="About-TitleMore">Ce que je sais faire</span>
+      </div><!-- /.Box-Title -->
+
+      {% for skill in site.skills %}
+        <div class="Competence-Item">
+          <h3 class="Title Title--center Title--H3 Title--darkBlue">{{ skill.title }}</h3>
+          <p class="Competence-Exp">{{ skill.exp_years }} ans d'expérience</p>
+          <img class="Competence-Image" src="{{ site.baseurl }}/assets/img/{{ skill.img }}"></img>
+        </div>
+      {% endfor %}
+    </section><!-- /.Competence -->
+
+    <section class="Box Techno"><!-- .Techno -->
+      <div class="Box-Title"><!-- .Box-Title -->
+        <h2 class="Title Title--inBloc Title--h2 Title--blue">Technologie</h2>
+        <span class="About-TitleMore">Les outils que j'utilise</span>
+      </div><!-- /.Box-Title -->
+
+      {% for techno in site.technos %}
+        <div class="Competence-Item">
+          <h3 class="Title Title--center Title--H3 Title--darkBlue">{{ techno.title }}</h3>
+          <p class="Competence-Exp">{{ techno.description }}</p>
+          <img class="Competence-Image" src="{{ site.baseurl }}/assets/img/{{ techno.img }}"></img>
+        </div>
+      {% endfor %}
+    </section><!-- /.Techno -->
+  </div><!-- /.About-Wrapper -->
+
+{% include page-footer.html %}
