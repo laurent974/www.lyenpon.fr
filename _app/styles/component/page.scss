@@ -1,0 +1,13 @@
+.Page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .SmallLogo {
+    position: absolute;
+    width: 46px;
+    left: 62px;
+    top: 55px;
+  }
+}
