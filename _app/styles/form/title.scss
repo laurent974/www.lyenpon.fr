@@ -1,0 +1,23 @@
+.Title {
+  margin: $spaceMedium 0 0;
+
+  &--inBloc {
+    display: inline-block;
+  }
+
+  &--h2 {
+    font-size: $big-font-size;
+  }
+
+  &--darkBlue {
+    color: $darkBlue;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--red {
+    color: $red;
+  }
+}
