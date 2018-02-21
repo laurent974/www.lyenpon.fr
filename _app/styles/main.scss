@@ -3,6 +3,7 @@
 @import "_variables";
 
 //Form
+@import "form/form";
 @import "form/font";
 @import "form/button";
 @import "form/link";
@@ -12,6 +13,7 @@
 
 //Component
 @import "component/index";
+@import "component/page";
 @import "component/particle";
 @import "component/hamburger";
 @import "component/nav";
