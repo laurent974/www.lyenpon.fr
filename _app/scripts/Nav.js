@@ -8,8 +8,16 @@ var Nav = {
     var that = this;
 
     $(this.settings.selector).on('click', function() {
-      $(that.settings.nav).toggleClass('NavContainer-Open');
+      $("body").find(that.settings.nav).toggleClass('NavContainer-Open');
     });
+  },
+
+  close: function() {
+    var that = this;
+    
+    if ($("body").find(this.settings.nav).hasClass("NavContainer-Open")) {
+      $("body").find(that.settings.nav).toggleClass('NavContainer-Open');
+    }
   },
 
   init: function() {
