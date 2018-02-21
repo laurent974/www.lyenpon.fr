@@ -1,0 +1,10 @@
+.Box {
+  flex: 1 100%;
+  margin: $spaceBig 100px 0;
+
+  &-Title {
+    display: block;
+    margin-top: $spaceBig;
+    flex: 1 100%;
+  }
+}
