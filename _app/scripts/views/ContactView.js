@@ -7,6 +7,7 @@ var ContactView = Barba.BaseView.extend({
 
   onLeave: function() {
     IndexAnimation.destroy();
+    Nav.close();
   },
 
   onLeaveCompleted: function() {
