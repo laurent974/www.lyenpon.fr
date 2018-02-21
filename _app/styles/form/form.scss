@@ -1,0 +1,17 @@
+.Form {
+  &-Input,
+  &-Textarea {
+    margin-top: $spaceBig;
+    display: block;
+    padding: $spaceSmall $spaceMedium;
+  }
+
+  &-Input {
+
+  }
+
+  &-Textarea {
+    width: 250px;
+    height: 100px;
+  }
+}
