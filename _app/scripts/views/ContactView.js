@@ -2,6 +2,9 @@ var ContactView = Barba.BaseView.extend({
   namespace: 'contactpage',
   onEnter: function() {
     console.log("contact");
+  },
+
+  onEnterCompleted: function() {
     PageAnimation.init();
   },
 

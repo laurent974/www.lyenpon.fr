@@ -6,6 +6,7 @@ var app = {
   },
   viewsInit: function() {
     HomeView.init();
+    AboutView.init();
     ContactView.init();
   },
   init: function() {
