@@ -1,11 +1,61 @@
 .Button {
+  position: relative;
+  overflow: hidden;
   display: inline-block;
+  text-align: center;
+  cursor: pointer;
   text-decoration: none;
   padding: $spaceBig $spaceLarge;
   @extend .Font-Medium;
+  border: 0;
+
+  &:hover {
+    &:before {
+      width: 0;
+    }
+
+    .Button-Border-1 {
+      &:before {
+        width: 80%;
+      }
+
+      &:after {
+        left: 170%;
+        opacity: .5;
+      }
+    }
+  }
+
+  &-Border {
+    display: inline-block;
+
+    &-1 {
+      &:after {
+        content: "";
+        position: absolute;
+        left: -40%;
+        height: 500%;
+        width: 40px;
+        top: -125%;
+        transition: .8s all cubic-bezier(.19,1,.22,1);
+        background: $white;
+        opacity: .2;
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
+
+  &-Submit {
+    display: block;
+    margin-top: $spaceBig;
+    float: right;
+  }
 
   &--blue {
     background: $blue;
-    color: $white;
+
+    .Button-Text {
+      color: $white;
+    }
   }
 }
