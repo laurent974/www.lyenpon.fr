@@ -27,3 +27,7 @@ exclude: ["_app",
 
 keep_files: [assets]
 permalink: pretty
+
+collections:
+  skills:
+  technos:
