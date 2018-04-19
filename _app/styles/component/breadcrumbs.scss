@@ -1,7 +1,10 @@
 .Breadcrumbs {
   position: absolute;
   display: block;
-  top: 55px;
-  left: 117px;
+  top: 45px;
+  left: 111px;
   color: $blue;
+  padding: $spaceMedium;
+  background: $white;
+  z-index: 10;
 }
