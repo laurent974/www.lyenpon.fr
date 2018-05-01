@@ -13,7 +13,8 @@
     background-size: cover;
 
     &[data-namespace="homepage"] {
-      background: url('../assets/img/bg-index.jpg') no-repeat center center;
+      background: url('../assets/img/bg-index.jpg') no-repeat;
+      background-size: cover;
     }
   }
 
