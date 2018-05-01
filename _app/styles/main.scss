@@ -2,17 +2,30 @@
 @import "_normalize";
 @import "_variables";
 
-//Form
+// Bootstrap v4.0
+// Required
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Optional
+@import "bootstrap/close";
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap/grid";
+@import "bootstrap/modal";
+@import "bootstrap/images";
+
+// Form
 @import "form/form";
 @import "form/font";
 @import "form/button";
 @import "form/link";
 @import "form/title";
 
-@import "_layout";
-@import "_syntax-highlighting";
+@import "layout";
+@import "syntax-highlighting";
 
-//Component
+// Component
 @import "component/index";
 @import "component/page";
 @import "component/particle";
