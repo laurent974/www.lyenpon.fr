@@ -1,9 +1,5 @@
 .Competence,
 .Techno {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
   &-Item {
     text-align: center;
   }
@@ -18,5 +14,14 @@
     max-height: 115px;
     max-width: 100%;
     margin-left: $spaceMedium;
+    margin-top: $spaceMedium;
   }
+}
+
+.Techno {
+  margin-bottom: 100px;
+}
+
+.List-Item {
+  margin-top: $spaceBig;
 }
